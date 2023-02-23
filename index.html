@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
+    <!-- meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site para encontrar seu bloco no carnaval </title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+
 </head>
+
 <body>
-    
+
+    <header class="header" id="header">
+        <div class="content">
+            <div class="describe">
+                <p>
+                    find your block
+                </p>
+                <h1>
+                    Encontre os <span>melhores blocos</span> de carnaval de 2023
+                </h1>
+            </div>
+            <form class="search">
+                <div class="search-field">
+                    <label class="sr-only" for="name">Pesquise por nome</label>
+                    <i class="ph-magnifying-glass-light"></i>
+                    <input type="text" id="name" name="name" placeholder="Pesquise por nome" />
+                </div>
+                <div class="search-field select">
+                    <label class="sr-only" for="city">Selecione uma cidade</label>
+                    <i class="ph-map-pin-light"></i>
+                    <select name="city" id="city">
+                        <option value="0" selected>Selecione sua cidade</option>
+                        <option value="sao-paulo">São Paulo</option>
+                        <option value="rio-de-janeiro">Rio de Janeiro</option>
+                        <option value="salvador">Salvador</option>
+                    </select>
+                    <i class="ph-caret-down-light"></i>
+                </div>
+                <button class="btn primary">Buscar agora</button>
+            </form>
+        </div>
+    </header>
+
 </body>
+
 </html>
